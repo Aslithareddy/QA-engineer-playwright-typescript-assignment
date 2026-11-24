@@ -92,7 +92,7 @@ The UI tests run in both Chromium and Firefox, so the full run is 41 × 2 + 19 =
 
 ## Not finished / known limitations
 
-- **TC-10 (keyboard and screen-reader checkout) is manual only**, as explained in the test plan. It hasn't been run yet.
+- **TC-10 (keyboard and screen-reader checkout) is planned as a manual check**, as explained in the test plan. It's outside the automated scope.
 - **The tests depend on two public demo sites.** If either one is down or slow (Restful-Booker sometimes is), tests can fail for reasons that have nothing to do with the code. CI retries help but can't fully prevent this.
 - **The shop's `performance_glitch_user` and `visual_user` accounts are not tested** in depth. `visual_user` is used only in BUG-03.
 - **The API bug tests (BUG-09 to BUG-12) document current behaviour.** If the API owners say these responses are intended, the `test.fail()` markers would come out.
