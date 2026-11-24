@@ -14,9 +14,10 @@ export default defineConfig({
   use: {
     // Sauce Demo exposes stable `data-test` attributes – use them for getByTestId().
     testIdAttribute: 'data-test',
-    trace: 'retain-on-failure',
+    // Keep evidence for every test – passed, failed and expected-failure (known bug) alike.
+    trace: 'on',
+    video: 'on',
     screenshot: 'only-on-failure',
-    video: 'retain-on-failure',
   },
 
   projects: [
